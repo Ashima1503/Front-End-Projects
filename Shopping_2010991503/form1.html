@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/6ec9c7cfba.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js.js"></script>
+
+</head>
+<body>
+  <h1 align="center" id="h">CART</h1>
+     <!--form-->
+<div class="form1">
+   <form method="get" action="" name="frm" onsubmit="return valid()">
+      <div class="form-group row">
+        <div class="col-sm-6">
+          <input type="text" class="form-control" id="inputEmail3" placeholder="Enter Your Name" name="name">
+        </div>
+      </div>
+      <div class="form-group row">
+         <div class="col-sm-6">
+           <input type="email" class="form-control" id="inputEmail3" placeholder="Enter Your Email" name="email">
+         </div>
+       </div>
+       <div class="form-group row">
+         <div class="col-sm-6">
+           <input type="text" class="form-control" id="inputEmail3" placeholder="Enter Your Mobile Number" name="mobno">
+         </div>
+       </div>
+       <div class="form-group row">
+         <div class="col-sm-6">
+         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Enter Your Address" name="address"></textarea>
+         </div>
+      </div>
+      <label>Product:</label><br>
+      <div  class="c1" id="check1">
+      </div>
+       <fieldset class="form-group">
+         <div class="row">
+           <legend class="col-form-label col-sm-3 pt-0">Mode of Payment</legend>
+           <div class="col-sm-6">
+             <div class="form-check">
+               <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+               <label class="form-check-label" for="gridRadios1">
+                 Cash on delivery
+               </label>
+             </div>
+             <div class="form-check disabled">
+               <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2" disabled>
+               <label class="form-check-label" for="gridRadios2">
+                 Online Payment(not available)
+               </label>
+             </div>
+           </div>
+         </div>
+       </fieldset>
+       <div class="form-group row">
+        <div class="col-sm-10">
+      Enter Quantity: <input id="b1" placeholder="Enter Quantity" type=number min=1 max=100 value="1">
+             <input type="button" class="btn btn-primary" onclick="increment()" value="+">
+             <input type="button" class="btn btn-primary" onclick="decrement()" value="-">
+           </div>
+        </div>
+       <div class="form-group row">
+        <div class="col-sm-10">
+          <!-- <button type="submit" class="btn btn-primary" onclick="valid()">Submit</button> -->
+          <input type="submit" class="btn btn-primary">
+        <input type="reset" class="btn btn-primary">
+        </div>
+      </div>
+    </form>
+    
+   
+    <script>//form validation
+	    function valid(){
+        var name=document.forms["frm"]["name"].value;
+        var email=document.forms["frm"]["email"].value;
+        var mobno=document.forms["frm"]["mobno"].value;
+        var address=document.forms["frm"]["address"].value;
+        var radio=document.forms["frm"]["gridRadios"].value;
+        checkboxes = document.querySelectorAll('input[type="checkbox"]:checked'); 
+        if(name==""){
+          alert("please enter you first name")
+          return false;
+        }
+        else if(name.length >30 ){
+            alert("Name should Be less Than 30 characters.");
+            return false;
+            
+          }
+        else if(!((name >='A' && name<='Z') || (name>='a' && name<='z'))){
+            alert("Enter First Name according to the given parameters.");
+            return false;
+        }
+       
+        else if(email==""){
+            alert("please enter your email")
+            return false;
+        }
+        else if(mobno==""){
+            alert("please enter your mobile number")
+            return false;
+        }
+        else if(isNaN(mobno) || (mobno.length<10 || mobno.length>10)){
+            alert("Please Enter Valid Mobile Number.");
+            return false;
+        }
+        else if(address==""){
+            alert("please enter your address")
+            return false;
+        }
+        else if(radio==""){
+            alert("please select your mode of payment")
+            return false;
+        }
+        else if(checkboxes.length === 0){
+            alert("Please Select product.");
+            return false;
+        }
+        else{
+		        alert("form submitted successfully")
+		        return true;
+	      }
+}
+
+  function increment() {
+    document.getElementById('b1').stepUp();
+  }
+  function decrement() {
+    document.getElementById('b1').stepDown();
+  }
+  // function success() {
+  //   alert("form submitted successfully");
+  // }
+  
+  fetch('https://dummyjson.com/products').then((data)=>{
+    return data.json();
+}).then((completedata)=>{
+  let data3="";
+    completedata.products.map(function(e) {
+      data3+=`
+	      <input type="checkbox" value="products" name="check"> ${e.title}  Price: $${e.price}<br>`
+    });
+    
+    document.getElementById("check1").innerHTML=data3;
+
+    
+}).catch((err)=>{
+    console.log(err);
+})
+  </script>
+  <script src="script.js.js"></script>
+
+</body>
+</html>
+</div>
+<!--form end-->

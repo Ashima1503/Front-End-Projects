@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/6ec9c7cfba.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">VINTAGE SHOPPING</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" onclick="window.open('form1.html')">Cart</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact us</a>
+        </li>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" id="search" type="search" placeholder="Search" list="q">
+          <datalist id="q"></datalist>
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit" onclick="window.open('cart.html')"><i class="fa fa-search"></i></button>
+        </form>
+      </ul>
+    </div>
+  </nav>
+  <div id="home">
+    <marquee bgcolor="black" direction="right" scrollamount="10" height="20px"><div><p class="a">"We provide all kinds of products at reasonable rates.Click below to get started and view our cart."</p></div></marquee>
+    <div><p class="abc">Online Shopping</p></div>
+    <div class="container">
+      <div class="button" onclick="window.open('cart.html')">Get started</div>
+    </div>
+    <!-- <a href="#start"><button value="submit" class="abc1">Get started</button></a> -->
+    </div>
+      <!-- Start About -->
+      <section class="about" id="about">
+        <div class="content">
+             <div class="box">
+                  <div class="inner">
+                       <div class="img">
+                           <img src="images/discount.jpg" alt="about" height=300px/>
+                       </div>
+                     <div class="text">
+           <marquee direction="up">
+                          <h4> DISCOUNT </h4>
+                          <p>"You can get huge discount on festivals"</p>
+          </marquee>
+                     </div>
+                  </div>
+             </div>
+               <div class="box">
+                  <div class="inner">
+                       <div class="img">
+                           <img src="images/fast.jpg" alt="about" height=300px/>
+                       </div>
+                     <div class="text">
+           <marquee direction="up">
+                          <h4> FASTEST DELIVERY  </h4>
+                       <p> "Get your products to your doorstep within short time"</p>
+          </marquee>
+                     </div>
+                  </div>
+             </div>
+             <div class="box">
+                  <div class="inner">
+                       <div class="img">
+                           <img src="images/offer.jpg" alt="about" height=300px/>
+                       </div>
+                     <div class="text">
+           <marquee direction="up">
+                          <h4> OFFER </h4>
+                      <p>"Buy one get one free"</p>
+          </marquee>
+                     </div>
+                  </div>
+             </div>
+        </div>
+    </section>
+    <!-- End About -->
+  <h1 class="heading">PRODUCTS</h1>
+    <div id="cards">
+        <!-- <div class="card">
+            <h1 class="title">title</h1>
+            <img src="https://images.pexels.com/photos/13639243/pexels-photo-13639243.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load" alt="img" class="images">
+            <p>description</p>
+            <p class="category">Category</p>
+            <p class="price">price</p>
+            <div class="add">
+            <button class="add1" onclick="window.open('form1.html')">Add to cart</button>
+            </div>
+        </div> -->
+    </div>
+    <div id="root"></div>
+    <section class="contact" id="contact">
+      <div class="content">
+          <div class="box form wow slideInLeft">
+             <form>
+                <input type="text" placeholder="Enter Your Name">
+                <input type="text" placeholder="Enter Your Email">
+                <input type="text" placeholder="Enter Your Mobile Number">
+                <textarea placeholder="Enter Your Reviews"></textarea>
+                <button type="submit">Send
+        </button>
+             </form>
+          </div>
+          <div class="box text wow slideInRight">
+               <h2>Stay connected</h2>
+                <div class="info">
+                    <ul>
+                        <li><span class="fa fa-map-marker"></span> Plot No.1234,St. no.2,abc Nagar, New Delhi.</li>
+                        <li><span class="fa fa-phone"></span> 91 99XXXXXXXX</li>
+                        <li><span class="fa fa-envelope"></span> vintage@shopping.com</li>
+                    </ul>
+                </div>
+                <div class="social">
+                     <a href=""><span class="fa fa-facebook"></span></a>
+                     <a href=""><span class="fa fa-linkedin"></span></a>
+                     <a href=""><span class="fa fa-skype"></span></a>
+                     <a href=""><span class="fa fa-youtube-play"></span></a>
+                </div>
+
+
+          </div>
+   </div>
+</section>
+<!-- End Contact -->
+</body>
+</html>

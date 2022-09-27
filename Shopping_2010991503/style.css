@@ -1,0 +1,314 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+#home{
+    height: 600px;
+    /* width: 100%;  */
+	background-image: url('../images/shop9.jpg');
+	background-size: cover;
+	/* padding:15px;
+	-webkit-display: flex;
+	display: flex;
+	position: relative; */
+}
+.listimage{
+    height: 10px;
+    width: 10px;
+}
+.a{
+    color: white;
+}
+.abc{
+    color:white;
+    font-size: 90px;
+	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top:100px;
+    padding-left: 10px;
+}
+.abc1{
+    float:right;
+}
+.container{
+    position:absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,50%);
+}
+
+.button{
+    /* position: relation; */
+    text-align: center;
+    width: 400px;
+    padding: 5px;
+    font-size:20px;
+    color: #15f4ee;
+    font-family: poppins;
+    font-weight: 400;
+    border: 5px solid;
+    text-transform: uppercase;
+    letter-spacing: 15px;
+    cursor: pointer;
+    border-radius: 100px;
+    transition: 1.5s;
+}
+.button:hover{
+    box-shadow: 0 5px 10px 0 #15f4ee inset, 0 5px 10px 0 #15f4ee,
+    0 5px 10px 0 #15f4ee inset, 0 5px 10px 0 #15f4ee;
+    text-shadow: 0 0 5px #15f4ee;
+}
+.heading{
+    text-align:center;
+	color: #4d8d08;
+    font-size: 3rem;
+    margin-bottom:1.5rem;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: underline;
+}
+#search{
+    height: 45px;
+    width: 450px;
+}
+#cards{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.card{
+    width:23%;
+    box-shadow: 0 0 4px 3px black;
+    text-align: center;
+    padding:1.5rem;
+    margin-bottom:2em;
+}
+.images{
+    width:100%;
+}
+.title{
+    font-size: 1.3rem;
+}
+.price{
+    font-weight:bold;
+    text-transform: capitalize;
+    font-size:1.2rem;
+}
+.cart{
+    text-transform: capitalize;
+    font-size:15px;
+}
+#b1{
+    height: 35px;
+    width: 150px;
+}
+
+.add1{
+    /* position: relation; */
+    text-align: center;
+    width: 270px;
+    padding: 2px;
+    font-size:12px;
+    color: grey;
+    font-family: poppins;
+    font-weight: 400;
+    border: 5px solid;
+    text-transform: uppercase;
+    letter-spacing: 15px;
+    cursor: pointer;
+    border-radius: 100px;
+    transition: 1.5s;
+}
+.add1:hover{
+    box-shadow: 0 5px 10px 0 grey inset, 0 5px 10px 0 grey,
+    0 5px 10px 0 grey inset, 0 5px 10px 0 grey;
+    text-shadow: 0 0 5px grey;
+}
+/*Contact Section*/
+
+.contact{
+	padding:80px 0px;
+}
+
+.contact .content{
+	background-color: #222222;
+	-webkit-display: flex;
+	display: flex;
+}
+
+.contact .content .box{
+	flex:0 0 50%;
+	max-width: 50%;
+	padding: 15px;
+}
+
+.contact .content .form input,
+.contact .content .form textarea{
+ height: 45px;
+ width: 100%;
+ padding:6px 12px;
+ margin-bottom: 25px;
+ background-color: transparent;
+ border:1px solid #ffffff;
+ font-family: 'Open-sans',sans-serif;
+ color:#ffffff;
+}
+.contact .content .form input:focus,
+.contact .content .form textarea:focus{
+ outline: none;
+}
+.contact .content .form input::placeholder,
+.contact .content .form textarea::placeholder{
+	color:#ffffff;
+}
+.contact .content .form textarea{
+	height: 100px;
+}
+
+.contact .content .form button{
+	border-radius:25%;
+	outline: none;
+	box-shadow: none;
+	height: 45px;
+	padding:0px 50px;
+	border:1px solid transparent;
+	background-color: #AEF359;
+	color:#ffffff;
+	font-size: 15px;
+	transition: all .5s ease;
+	cursor: pointer;
+}
+.contact .content .form button:hover{
+	background-color:transparent;
+	color:#ffffff; 
+    border-color:#ffffff;
+}
+
+.contact .content .text h2{
+	font-size: 30px;
+    font-weight: 500;
+    color: #AEF359;
+    padding: 0px 0px 20px;
+}
+.contact .content .text p{
+    font-size: 15px;
+    line-height: 20px;
+    color: #ffffff;
+    margin: 0;
+    padding: 0px 0px 30px;
+    font-family: 'Open-sans', sans-serif;
+}
+
+.contact .content .text .info ul{
+	list-style: none;
+	padding:0;
+	margin:0;
+}
+
+.contact .content .text .info li{
+	display: block;
+	margin-bottom: 15px;
+	color:#ffffff;
+	font-size: 15px;
+	letter-spacing: 1px;
+	position: relative;
+	padding-left: 40px;
+	font-family: 'Open-Sans',sans-serif;
+}
+.contact .content .text .info li span{
+	display: inline-block;
+	position: absolute;
+	left:0px;
+	top:0px;
+	font-size: 20px;
+	color:#AEF359;
+}
+.contact .content .text .social {
+	padding-top: 30px;
+}
+.contact .content .text .social a{
+	height: 40px;
+	width: 40px;
+	line-height: 40px;
+	text-align: center;
+	background-color: #AEF359;
+    text-decoration: none;	
+    display: inline-block;
+    margin-right: 10px;
+    transition: all .5s ease;
+    border:1px solid transparent;
+} 
+
+.contact .content .text .social a:hover{
+	background-color: transparent;
+    border-color: #ffffff;
+}
+
+.contact .content .text .social a span{
+	color:#ffffff;
+	font-size: 20px;
+}
+
+.contact .content .text .copy{
+	border-top:1px solid #333333;
+	margin-top: 30px;
+	padding-top: 20px;
+	color:#c5c5c5;
+	font-size: 15px;
+}
+
+/*About section*/
+
+.about{
+	padding:80px 0px;
+	background-color:#ffffff;
+}
+
+.about .content{ 
+ -webkit-display: flex;
+ display: flex;
+}
+.about .content .box{
+	flex:0 0 33.33%;
+	max-width: 33.33%;
+	padding:15px;
+}
+.about .content .box .inner{
+	background-color:#222222;
+}
+.about .content .box:nth-child(2) .inner{
+	background-color: #74B72E;
+}
+.about .content .box .inner .img img{
+	width: 100%;
+}
+.about .content .box .inner .text{
+	padding:30px;
+}
+
+.about .content .box .inner .text h4{
+  font-size: 20px;
+  margin:0;
+  padding: 0px 0px 15px;
+  font-weight: 500;
+  color:#ffffff;
+ text-transform: capitalize;
+  text-align: center;
+}
+.about .content .box .inner .text p{
+	font-size: 15px;
+	line-height:20px;
+	color:#ffffff;
+	text-align: center;
+	margin:0;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.form1{
+	margin-top:70px;
+	margin-left:470px;
+}
+#h{
+	color: blue;
+	text-decoration: underline;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
