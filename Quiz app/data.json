@@ -1,0 +1,84 @@
+{
+    "Questions":[
+        {
+            "Quiz":"Q1) What does HTML stand for?",
+            "option1":"Hyper Text Preprocessor",
+            "option2":"Home Tool Multi Language",
+            "option3":"Hyper Text Markup Language",
+            "option4":"Hyper Type Markup Language",
+            "answer":"Hyper Text Markup Language"
+        },
+        {
+            "Quiz":"Q2) What does CSS stand for?",
+            "option1":"Common Style Sheet",
+            "option2":"Colorful Style Sheet",
+            "option3":"Computer Style Sheet",
+            "option4":"Cascading Style Sheet",
+            "answer":"Cascading Style Sheet"
+        },
+        {
+            "Quiz":"Q.3) How to write an IF statement in JavaScript?",
+            "option1":"if i==5",
+            "option2":"if(i==5)",
+            "option3":"if i==5,",
+            "option4":"if i==5 then",
+            "answer":"if(i==5)"
+        },
+        {
+            "Quiz":"Q.4) What does PHP stand for?",
+            "option1":"Hypertext Preprocessor",
+            "option2":"Hypertext Programming",
+            "option3":"Hypertext Preprogramming",
+            "option4":"Hometext Preprocessor",
+            "answer":"Hypertext Preprocessor"
+        },
+        {
+            "Quiz":"Q.5) Which of the following element is responsible for making the text bold in HTML?",
+            "option1":"<pre>",
+            "option2":"<a>",
+            "option3":"<b>",
+            "option4":"<br>",
+            "answer":"<b>"
+        },
+        {
+            "Quiz":"Q.6) Which of the following element is used for adding paragraph in HTML?",
+            "option1":"<paragraph>",
+            "option2":"<para>",
+            "option3":"<p>",
+            "option4":"<pg>",
+            "answer":"<p>"
+        },
+        {
+            "Quiz":"Q.7) Inside which HTML element do we put the JavaScript? ",
+            "option1":"<js></js>",
+            "option2":"<javascript></javascript>",
+            "option3":"<script></script>",
+            "option4":"None of the above",
+            "answer":"<script></script>"
+        },
+        {
+            "Quiz":"Q.8) How does a WHILE loop start?",
+            "option1":"while(i <= 0)",
+            "option2":"while(i <= 0 i++)",
+            "option3":"while i <= 0",
+            "option4":"None of the above",
+            "answer":"while(i <= 0)"
+        },
+        {
+            "Quiz":"Q.9) Which HTML tag is used to define an internal style sheet?",
+            "option1":"<script>",
+            "option2":"<style>",
+            "option3":"<body>",
+            "option4":"None of the above",
+            "answer":"<style>"
+        },
+        {
+            "Quiz":"Q.10) Which is the correct CSS syntax?",
+            "option1":"body{color:black}",
+            "option2":"{body{color:black}",
+            "option3":"body={color:black}",
+            "option4":"body:color{black}",
+            "answer":"body{color:black}"
+        }
+    ]
+}
