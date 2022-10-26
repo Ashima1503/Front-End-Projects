@@ -1,0 +1,65 @@
+.body{
+    background-color: rgb(7, 38, 66);
+}
+h1{
+    color: #fff;
+    font-family: MV Boli;
+}
+.btn1{
+    position: relative;
+    height:40px;
+    width:150px;
+    border-radius: 50px;
+    border:none;
+    outline:none;
+    background: #111;
+    color:#fff;
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.btn1:hover{
+    background: linear-gradient(90deg,#03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 400%;
+
+}  
+.btn1:before{
+    content: '';
+    position: inherit;
+    background: inherit;
+    top: -5px;
+    right: -5px;
+    bottom: -5px;
+    left: -5px;
+    border-radius: 50px;
+    filter: blur(20px);
+    opacity: 0;
+    transition: opacity 0.5s;
+}  
+.btn1:before{
+    opacity: 1;
+    z-index: -1;
+}  
+.btn1:hover{
+    z-index: 1;
+    animation: glow 8s linear infinite;
+}  
+@keyframes glow{
+    100%{
+        background-position: 400%;
+    }
+}
+
+.card{
+    margin-top: 10px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.card-body{
+    display: inline-block;
+}
+.pay{
+    height:250px;
+    width:400px;
+    border: 2px #111 solid;
+}

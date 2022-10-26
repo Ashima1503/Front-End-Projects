@@ -1,0 +1,90 @@
+
+header{
+	width: 100vw;
+	min-height: 100vh;
+	background: #34495e;
+	font-size: 1.2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.container5{
+	background: white;
+	max-width: 400px;
+	min-height: 500px;
+	display: flex;
+	justify-content:space-between;
+	align-items: flex-start;
+	padding: 0.5rem 1.5rem;
+}
+.left{
+	flex-basis: 50%;
+}
+.right{
+	flex-basis: 100%;
+}
+form{
+	padding: 1rem;
+    width: 100%;
+	padding: 0.5rem 0.7rem;
+	margin: 0.5rem 0;
+	outline: none;
+}
+
+h3{
+	margin-top: 1rem;
+	color:#2c3e50;
+	}
+
+.input3{
+	width: 100%;
+	padding: 0.5rem 0.7rem;
+	margin: 0.5rem 0;
+	outline: none;
+    border: 1px solid black;
+}
+
+#zip{
+	display: flex;
+	margin-top: 0.5rem;
+}
+#zip select{
+	padding: 0.5rem 0.7rem;
+}
+#zip .input[type="number"]{
+	padding: 0.5rem 0.7rem;
+	margin-left: 5px;	
+}
+.input2{
+	width: 100%;
+	padding: 0.7rem 1.5rem;
+	background: #34495e;
+	color: white;
+	border: none;
+	outline: none;
+	margin-top: 1rem;
+    height:50px;
+	cursor: pointer;
+    border: 1px solid black;
+}
+
+.input2:hover{
+	background: #2c3e50;
+}
+
+
+@media only screen and (max-width: 770px){
+	.container5{
+		flex-direction: column;
+	}
+	body{
+		overflow-x: hidden;
+	}
+}
+.card1{
+    width: 100px;
+}
+.card2{
+    width: 50px;
+    margin-left: 5px;
+}

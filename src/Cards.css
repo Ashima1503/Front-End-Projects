@@ -1,0 +1,21 @@
+.card-deck{
+    margin: 30px;
+}
+.card-img-top{
+    transition: transform .2s;
+}
+.card-img-top:hover {
+    transform: scale(1.2); 
+  }
+#more {display: none;}
+.p4{
+    color: black;
+    font-family: Dancing Script;
+}
+.card{
+    font-family: Dancing Script;
+}
+.card-title{
+    font-family: Dancing Script;
+    font-size: 30px;
+}

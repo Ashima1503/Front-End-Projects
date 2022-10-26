@@ -1,0 +1,71 @@
+.header {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-size: cover;
+    height: 750px;
+    width:100%;
+    padding-top: 100px;
+}
+
+.overlay {
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    left: 0;
+    top: 0;
+}
+.container2 {
+    position: absolute;
+    top: 50px;
+    right:0;
+    margin: 20px;
+    width: 450px;
+    padding: 16px;
+    background-color: lightblue;
+    font-family: Dancing Script;
+    background-color: rgba(255,255,255,0.45);  
+}
+input{
+    width: 300px;
+    height: 30px;
+    border: none;
+  }
+  .btn-outline-light {
+    background-color: pink;
+    color: black;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 300px;
+    opacity: 0.9;
+  }
+  .btn-outline-light:hover {
+    opacity: 1;
+  }
+  @media (max-width: 575.98px) {
+    .container2 {
+      left: 0;
+      padding: 0 15px;
+      position: absolute;
+      top: 10%;
+      transform: none;
+      text-align: center;
+    }
+    
+    .container2 h1 {
+      font-size: 2em;
+    }
+    
+    .container2 p {
+      font-size: 1.2rem;
+    }
+    
+    .features {
+      margin: 0;
+    }
+  }
+  .login{
+    color: black;
+    font-family: Dancing Script;
+  }

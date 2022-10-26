@@ -1,0 +1,79 @@
+.header {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-size: cover;
+    height: 750px;
+    width:100%;
+    padding-top: 100px;
+}
+
+.overlay {
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    left: 0;
+    top: 0;
+}
+.container1 {
+    position: absolute;
+    top: 50px;
+    right:0;
+    margin: 20px;
+    width: 450px;
+    padding: 16px;
+    background-color: rgba(255,255,255,0.45);
+    font-family: Dancing Script;
+
+}
+input{
+    width: 300px;
+    height: 30px;
+    border: none;
+  }
+  .btn-outline-light {
+    background-color: pink;
+    color: black;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 300px;
+    opacity: 0.9;
+    height: 60px;
+  }
+  .btn-outline-light:hover {
+    opacity: 1;
+  }
+  @media (max-width: 575.98px) {
+    .container1 {
+      left: 0;
+      padding: 0 15px;
+      position: absolute;
+      top: 10%;
+      transform: none;
+      text-align: center;
+    }
+    
+    .container1 h1 {
+      font-size: 2rem;
+    }
+    
+    .container1 p {
+      font-size: 1.2rem;
+    }
+    
+    .features {
+      margin: 0;
+    }
+  }
+  p{
+    text-align: center;
+    font-size: 20px;
+  }
+  .register{
+    color: black;
+    font-family: Dancing Script;
+  }
+  .meet{
+    padding: 100px;
+    }
